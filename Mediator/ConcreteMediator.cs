@@ -14,15 +14,15 @@ namespace Mediator
             this.component2.SetMediator(this);
 		}
 
-        public void Notify(object sender, string env)
+        public void Notify(object sender, string ev)
         {
-            if (env == "A")
+            if (ev == "A")
             {
                 Console.WriteLine("Mediator reacts on A and triggers following operation");
                 this.component2.DoC();
             }
 
-            if (env == "D")
+            if (ev == "D")
             {
                 Console.WriteLine("Mediator reacts on D and triggers following operation");
                 this.component1.DoB();

@@ -2,7 +2,7 @@
 {
     public interface IMediator
 	{
-		void Notify(object sender, string env);
+		void Notify(object sender, string ev);
 	}
 }
 
